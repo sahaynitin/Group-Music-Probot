@@ -12,7 +12,7 @@ GROUP_MUSIC_PROBOT_IMG = "https://telegra.ph/file/70008107133ae8f4d1f1f.jpg"
 async def start(_, message: Message):
     await message.reply_photo(GROUP_MUSIC_PROBOT_IMG)
     await message.reply_text(
-        f"""**Hey, I'm {BOT_NAME} 🎵
+        f"""**Welcome {} 🎵
         
 💭 Groups Music allows you to play music on groups through the new Telegram's voice chats!
 
