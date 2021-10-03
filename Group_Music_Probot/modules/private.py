@@ -14,24 +14,25 @@ async def start(_, message: Message):
     await message.reply_text(
         f"""**Hey, I'm {BOT_NAME} 🎵
         
-I am Group Music Probot, I Am an Advance And Powerful Telegram Groups Voice Chat Music Bot.
-Try the /help Command below to know my abilities.
+💭 Groups Music allows you to play music on groups through the new Telegram's voice chats!
+
+💡 Find out all the Bot's commands and how they work by clicking on the » 📚 Commands button.
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "👥 𝙰𝚍𝚍 Group Music Probot 𝚃𝚘 𝚈𝚘𝚞𝚛 𝙶𝚛𝚘𝚞𝚙 👥", url="https://t.me/Group_Music_ProBot?startgroup=true")
+                        "+ 𝙰𝚍𝚍  𝚃𝚘 𝚈𝚘𝚞𝚛 𝙶𝚛𝚘𝚞𝚙 +", url="https://t.me/tellymusicprobot?startgroup=true")
                   ],[
                     InlineKeyboardButton(
-                        "💬 Music Lovers 💬", url="https://t.me/HindiKDrama"
+                        "💬 Commands 💬", url="https://telegra.ph/file/2923b12c5e9eaa73e3636.jpg"
                     ),
                     InlineKeyboardButton(
-                        "🙋 𝚂𝚞𝚙𝚙𝚘𝚛𝚝 𝙲𝚑𝚊𝚝 🙋", url="https://t.me/Black_Knights_Union_Support"
+                        "🗯️ Bot Channel 🗯️", url="https://t.me/tellybots_4u"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "💁 Assistant 💁", url="https://t.me/Group_Music_Pro"
+                        " My Assistant ", url="https://t.me/drjony1"
                     )],
             ]
         ),
@@ -43,7 +44,7 @@ Try the /help Command below to know my abilities.
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
     await message.reply_text(
-        f"""*💜 {PROJECT_NAME} is online**""",
+        f"""*📍 {PROJECT_NAME} is online**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
